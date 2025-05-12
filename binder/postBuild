@@ -43,3 +43,9 @@ SCALA_VERSION=2.11.12 ALMOND_VERSION=0.6.0
   --metabrowse
 rm -f almond-scala-2.11
 
+# Install required Jupyter/JupyterLab extensions
+jupyter labextension install --minimize=False \
+  jupyterlab-plotly \
+  @almond-sh/scalafmt \
+  @almond-sh/jupyterlab_variableinspector
+
